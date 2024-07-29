@@ -16,10 +16,10 @@
 
         default_layer {
             // -----------------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
+            // | TAB  |  Q  |  W  |  E  |  R  |  T  |  split  |  Y  |  U   |  I  |  O  |  P  | BKSP |
+            // | CTRL |  A  |  S  |  D  |  F  |  G  |  split  |  H  |  J   |  K  |  L  |  ;  |  '   |
+            // | SHFT |  Z  |  X  |  C  |  V  |  B  |  split  |  N  |  M   |  ,  |  .  |  /  | ESC  |
+            //                    | GUI | LWR | SPC |  split  | ENT | RSE  | ALT |
 
             bindings = <
 &kp TAB         &kp Q  &kp W  &kp E     &kp R  &kp T        &kp Y    &kp U  &kp I      &kp O    &kp P     &kp BSPC
@@ -31,10 +31,10 @@
 
         lower_layer {
             // -----------------------------------------------------------------------------------------
-            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | DEL |
-            // | CTRL |  1  |  2  |  3  |  4  |  5  |   |  -  |  =  |  [  |  ]  |  \  |  `  |
-            // | SHFT |  6  |  7  |  8  |  9  |  0  |   |  _  |  +  |  {  |  }  | "|" |  ~  |
-            //                    | GUI |     | SPC |   | ENT | MO3 | ALT |
+            // | TAB  |  !  |  @  |  #  |  $  |  %  |  split  |  ^  |  &  |  *  |  (  |  )  | DEL |
+            // | CTRL |  1  |  2  |  3  |  4  |  5  |  split  |  -  |  =  |  [  |  ]  |  \  |  `  |
+            // | SHFT |  6  |  7  |  8  |  9  |  0  |  split  |  _  |  +  |  {  |  }  | "|" |  ~  |
+            //                    | GUI |     | SPC |  split  | ENT | MO3 | ALT |
 
             bindings = <
 &kp TAB   &kp EXCLAMATION  &kp AT_SIGN   &kp HASH      &kp DLLR      &kp PERCENT    &kp CARET       &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DEL
@@ -46,10 +46,10 @@
 
         raise_layer {
             // -----------------------------------------------------------------------------------------
-            // | F1 |  F2  |  F3  |  F4  |  F5  |  F6  |   |  F7  |  F8  |  F9  |  F10 | F11 | F12 |
-            // | NO |  NO  |  NO  | LCLK | MCLK | RCLK |   | HOME | PGUP |  Up  | PGUP |     |     |
-            // | BT |  B0  |  B1  |  B2  |  B3  |  B4  |   | END  | LEFT | Down | RIGHT|     |     |
-            //                    | GUI  |      | SPC  |   | ENT  |      | ALT  |
+            // |  F1  |  F2  |  F3  |  F4  |  F5  |  F6  |  split  |  F7  |  F8  |  F9  |  F10 | F11 | F12 |
+            // | CTRL | PREV | NEXT |volDN |volUP | P-P  |  split  | HOME | PGUP |  Up  | PGUP |     |     |
+            // | SHFT |  x   |  x   | L-C  | M-C  | R-C  |  split  | END  | LEFT | Down | RIGHT|     |     |
+            //                      | GUI  |      | SPC  |  split  | ENT  |      | ALT  |
 
             bindings = <
 &kp F1     &kp F2      &kp F3      &kp F4        &kp F5        &kp F6              &kp F7    &kp F8       &kp F9    &kp F10        &kp F11   &kp F12
@@ -61,10 +61,10 @@
 
         layer_3 {
             // -----------------------------------------------------------------------------------------
-            // |  TAB |     |     |     |     |     |  split  |  x  |  x  |  x  |  x  |  x  |  x  |
-            // | CTRL |     |     |     |     |     |  split  |  x  |  x  |  x  |  x  |  x  |  x  |
-            // | SHFT |     |     |     |     |     |  split  |  x  |  x  |  x  |  x  |  x  |  x  |
-            //                    | GUI |     | SPC |  split  |  x  |  x  |  x  |
+            // | TAB  |  x  |  x  | RED | EFF | TOG |  split  |  x  |  x  |  x  |  x  |  x  |  x  |
+            // | CTRL |  x  | HUI | SAI | SPI | BRI |  split  |BCLE | BT0 | BT1 | BT2 | BT3 | BT4 |
+            // | SHFT |  x  | HUD | SAD | SPD | BRD |  split  |  x  |  x  |  x  |  x  |  x  |  x  |
+            //                    | GUI |     | SPC |  split  | ENT |     | ALT |
 
             bindings = <
 &kp TAB     &none  &none            &rgb_ug RGB_COLOR_HSB(360,100,50)  &rgb_ug RGB_EFF  &rgb_ug RGB_TOG    &none       &none         &none         &none         &none         &none
